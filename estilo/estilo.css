@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fontes/OpenSans.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url(../fontes/Merriweather.ttf) format(truetype);
+}
+
+:root {
+    --cor-base: #404770;
+    --cor01: #A4A8BD;
+    --cor02: #6C78BD; 
+    --cor03: #767988;
+    --cor04: #23273D;
+
+    --fonte-padrao: 'OpenSans';
+    --fonte-leitura: 'Merriweather';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: var(--fonte-padrao), Verdana, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--cor-base);
+    min-height: 40px;
+}
+
+nav {
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.197);
+}
+
+nav > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 08px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor01);
+    color: var(--cor-base);
+}
+
+main {
+    max-width: 800px;
+    min-width: 280px;
+    margin: auto;
+}
+
+article {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.234);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--cor03);
+}
+
+main h2 {
+    color: var(--cor02);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    font-family: var(--fonte-leitura), serif;
+    text-align: justify;
+    text-indent: 30px;
+    margin: 15px 0px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+footer {
+    background-color: var(--cor04);
+}
+
+footer > p {
+    font-size: 0.8em;
+    color: white;
+    padding: 3px;
+}
