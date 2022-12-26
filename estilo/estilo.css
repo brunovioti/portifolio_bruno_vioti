@@ -105,10 +105,20 @@ article div.projetos > h3 {
 
 footer {
     background-color: var(--cor04);
+    padding: 10px;
 }
 
 footer > p {
+    text-align: center;
     font-size: 0.8em;
     color: white;
     padding: 3px;
+}
+
+footer > a {
+    margin: 5px; 
+}
+
+footer > a > img {
+    border-radius: 10px;  
 }
